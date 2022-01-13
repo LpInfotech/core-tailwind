@@ -6,6 +6,13 @@ module.exports = {
       primary:'#FE8464',
       // secondary
       secondary:'#293651',
+      secondary_light:'#646F87',
+      // info
+      info:'#fe6e9a',
+      // light
+      light:'#fafafc',
+      // white
+      white:'#fff',
     },
 
     // font family

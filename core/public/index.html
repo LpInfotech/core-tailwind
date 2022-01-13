@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,185 @@
     <title>Core - HTML Business Website Template</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!--  -->
+    <!-- navbar -->
+    <section class="w-full bg-light">
+        <div class="xl:container mx-auto xl:px-5 md:px-2 sm:px-8 px-2">
+            <div class="grid grid-cols-1 w-11/12 xl:mx-auto px-6">
+                <!-- desktop navbar start -->
+                <nav class="xl:flex items-center hidden lg:flex">
+                    <a href="#">
+                        <img src="../public/images/logo.png" alt="growth-logo">
+                    </a>
+
+                    <div class="xl:flex md:flex lg:flex ml-auto">
+                        <ul class="xl:flex lg:flex md:flex items-center">
+                            <li class="py-8 border-b-2 border-light hover:border-primary">
+                                <a href="#" class="font-medium text-secondary_light px-7"> Home </a>
+                            </li>
+                            <li class="py-8 border-b-2 border-light hover:border-primary">
+                                <a href="#" class="font-medium text-secondary_light px-7"> About </a>
+                            </li>
+                            <li class="py-8 border-b-2 border-light hover:border-primary">
+                                <a href="#" class="font-medium text-secondary_light px-7"> Services </a>
+                            </li>
+                            <li class="py-8 border-b-2 border-light hover:border-primary">
+                                <a href="#" class="font-medium text-secondary_light px-7"> Pricing </a>
+                            </li>
+
+                            <li class="py-8 border-b-2 border-light hover:border-primary">
+                                <a href="#" class="font-medium text-secondary_light px-7"> Clients </a>
+                            </li>
+
+                            <li class="py-8 border-b-2 border-light hover:border-primary">
+                                <a href="#" class="font-medium text-secondary_light px-7"> Blog </a>
+                            </li>
+
+                            <li class="py-8 border-b-2 border-light hover:border-primary">
+                                <a href="#" class="font-medium text-secondary_light px-7"> Contact </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#"
+                        class="font-semibold text-white bg-gradient-to-r from-primary to-info hover:bg-gradient-to-r hover:from-info hover:to-primary ml-4 px-8 py-3 hidden xl:block lg:block md:block rounded-3xl shadow-xl transition ease-in-out duration-200">Free
+                        Quote</a>
+                </nav>
+                <!-- ./end desktop navar -->
+
+                <!-- mobile navbar start -->
+                <nav class="relative block xl:hidden lg:hidden bg-white py-8 px-7">
+                    <div class="flex">
+                        <a href="#">
+                            <img src="../public/images/logo.png" alt="growth-logo">
+                        </a>
+                        <button
+                            class="bg-primary py-2 px-3 ml-auto rounded-lg shadow-lg shadow-primary/50 text-white font-bold toggle-btn"
+                            onclick="toggle()"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg></button>
+                    </div>
+
+                    <div class="dropdown hidden" id="toggleMenu">
+                        <ul class="items-center px-7 mt-5 z-10 h-screen w-full absolute -right-full bg-white"
+                            id="dropdownMenu">
+                            <li class="mt-10">
+                                <a href="index.html" class="font-medium text-3xl text-secondary hover:text-primary">
+                                    Home </a>
+                            </li>
+                            <li class="mt-5">
+                                <a href="service.html" class="font-medium text-3xl text-secondary hover:text-primary">
+                                    About </a>
+                            </li>
+                            <li class="mt-5">
+                                <a href="case-study.html"
+                                    class="font-medium text-3xl text-secondary hover:text-primary"> Services </a>
+                            </li>
+                            <li class="mt-5">
+                                <a href="about.html" class="font-medium text-3xl text-secondary hover:text-primary">
+                                    Pricing </a>
+                            </li>
+                            <li class="mt-5">
+                                <a href="about.html" class="font-medium text-3xl text-secondary hover:text-primary">
+                                    Clients </a>
+                            </li>
+                            <li class="mt-5">
+                                <a href="about.html" class="font-medium text-3xl text-secondary hover:text-primary">
+                                    Blog </a>
+                            </li>
+                            <li class="mt-5">
+                                <a href="about.html" class="font-medium text-3xl text-secondary hover:text-primary">
+                                    Contact </a>
+                            </li>
+                            <li class="mt-20">
+                                <a href="#"
+                                    class="font-semibold text-white w-full bg-gradient-to-r from-primary to-info hover:bg-gradient-to-r hover:from-info hover:to-primary px-5 py-3 rounded-3xl hover:shadow-lg hover:shadow-primary/50 transition ease-in-out delay-200 hover:-translate-y-0.5">Free
+                                    Quote</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- ./end mobile navbar -->
+            </div>
+        </div>
+    </section>
+    <!-- ./end navbar -->
+
+    <!-- banner -->
+    <section class="w-full bg-light pb-28">
+        <div class="grid grid-cols-2">
+            <div class="flex justify-end place-items-center">
+                <div class="w-4/6">
+                    <h1 class="text-4xl text-secondary leading-10 tracking-wide">It's Time To Launch Your</h1>
+                    <h1 class="text-4xl font-bold text-secondary leading-10 tracking-wider pt-4">Business Website</h1>
+                    <p class="text-secondary_light tracking-wider pt-7 pb-14">Comes with all essential elements, features and sections for business websites, you need to launch a complete business or startup website.</p>
+                    <a href="#" class="shadow-xl bg-gradient-to-r from-primary to-info hover:bg-gradient-to-r hover:from-info hover:to-primary text-white font-medium tracking-wider text-base py-4 px-11 rounded-full transition ease-in-out duration-200">Get Started</a>
+                </div>
+            </div>
+            <div>
+                <img src="../public/images/banner-1.svg" alt="banner">
+            </div>
+        </div>
+    </section>
+    <!-- ./end banner -->
+
+    <!-- trusted part -->
+    <section class="w-full bg-light pb-28">
+        <div class="grid grid-cols-2">
+            <div class="flex justify-end place-items-center">
+                <div class="w-4/6">
+                    <h1 class="text-2xl text-secondary font-medium leading-10 tracking-wide"><span class="pb-2 border-b-2 border-secondary inline-block">Trusted</span> By</h1>
+                </div>
+            </div>
+        </div>
+        <div class="xl:container mx-auto px-16">
+            <div class="grid grid-cols-5 gap-6 mt-12">
+                <div class="flex place-items-center justify-center ">
+                    <img src="../public/images/trusted-1.png" class="w-36" alt="trusted-by">
+                </div>
+                <div class="flex place-items-center justify-center ">
+                    <img src="../public/images/trusted-2.png" class="w-36" alt="trusted-by">
+                </div>
+                <div class="flex place-items-center justify-center ">
+                    <img src="../public/images/trusted-3.png" class="w-36" alt="trusted-by">
+                </div>
+                <div class="flex place-items-center justify-center ">
+                    <img src="../public/images/trusted-4.png" class="w-36" alt="trusted-by">
+                </div>
+                <div class="flex place-items-center justify-center ">
+                    <img src="../public/images/trusted-5.png" class="w-36" alt="trusted-by">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./end trusted part -->
+
+    <!-- about -->
+    <!-- banner -->
+    <section class="w-full bg-light pb-28">
+        <div class="grid grid-cols-2">
+            <div>
+                <img src="../public/images/about-1.svg" alt="about">
+            </div>
+            <div class="flex place-items-center">
+                <div class="w-4/6">
+                    <h1 class="font-medium text-2xl text-primary">About Us</h1>
+                    <h1 class="text-4xl text-secondary leading-10 tracking-wide">A Little About Our Startup</h1>
+                    <h1 class="text-4xl font-bold text-secondary leading-10 tracking-wider pt-4">Business Solution</h1>
+                    <p class="text-secondary_light tracking-wider pt-7 pb-14">Lorem ipsum dolor sitrg amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna iquyam erat, sed diam voluptua. At vero eos et accusam et justo dudolores etea rebum. Stet clita kasd gubergren, no sea takimata sanctus esth Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consetetur sadipscing elitr.</p>
+                    <a href="#" class="shadow-xl bg-gradient-to-r from-primary to-info hover:bg-gradient-to-r hover:from-info hover:to-primary text-white font-medium tracking-wider text-base py-4 px-11 rounded-full transition ease-in-out duration-200">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./end banner -->
+    <!-- ./end about -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
