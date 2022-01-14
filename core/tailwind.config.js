@@ -4,6 +4,7 @@ module.exports = {
     colors:{
       // primary
       primary:'#FE8464',
+      primary_light:'#FFEFEB',
       // secondary
       secondary:'#293651',
       secondary_light:'#646F87',
