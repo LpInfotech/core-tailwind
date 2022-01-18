@@ -1,15 +1,16 @@
+// refresh page go to top
+$(document).ready(function () {
+    $(this).scrollTop(0);
+    $(".tablinks:nth-child(1)").addClass('border-b-2 border-primary text-primary');
+    $(".tablinks:nth-child(1)").removeClass('border-b border-secondary_light');
+});
+
 // animation on scroll library
 AOS.init({
-    duration:2000,
+    duration: 2000,
 });
 
-// refresh page go to top
-$(document).ready(function(){
-    $(this).scrollTop(0);
-});
-
-
-// ==== Mobilemenu Navbar.
+// Mobilemenu Navbar.
 function toggle() {
     var dropdown = document.getElementById('toggleMenu');
     var menu = document.getElementById('dropdownMenu');
@@ -41,6 +42,33 @@ $(window).scroll(function () {
     });
 });
 
+// technology tabs start
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+ // defaultopen
+ document.getElementById("defaultOpen").click();
+
+// technology button active
+$('.tablinks').click(function(){
+    $('.tablinks').removeClass('border-b-2 border-primary text-primary');
+    $('.tablinks').addClass('border-b border-secondary_light');
+    if($(this).find('active')){
+        $(this).addClass('border-b-2 border-primary text-primary');
+        $(this).removeClass('border-b border-secondary_light');
+    }
+});
+
 // testimonial slider
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -63,3 +91,16 @@ function showDivs(n) {
     }
     x[slideIndex - 1].style.display = "block";
 }
+
+// switch to darl mode
+const checkbox = document.querySelector('#toggle');
+const html = document.querySelector('html');
+
+const toggleDarkMode = function (){
+    checkbox.checked
+    ? html.classList.add("dark")
+    : html.classList.remove("dark")
+}
+
+toggleDarkMode();
+checkbox.addEventListener("click", toggleDarkMode);
