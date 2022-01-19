@@ -8,6 +8,7 @@ module.exports = {
       primary_light:'#FFEFEB',
       // secondary
       secondary:'#293651',
+      secondary_dark:'#132342',
       secondary_light:'#646F87',
       // info
       info:'#fe6e9a',

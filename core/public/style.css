@@ -481,6 +481,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: sticky;
 }
 
+.top-2 {
+  top: 0.5rem;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
 .-right-full {
   right: -100%;
 }
@@ -601,18 +609,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.left-2 {
-  left: 0.5rem;
-}
-
 .z-20 {
   z-index: 20;
 }
@@ -637,6 +633,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .mt-5 {
@@ -681,10 +681,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-14 {
   margin-bottom: 3.5rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
 }
 
 .block {
@@ -1131,11 +1127,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1239,21 +1230,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-primary\/50 {
-  --tw-shadow-color: rgb(254 132 100 / 0.5);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-primary {
-  --tw-shadow-color: #FE8464;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-primary_light {
-  --tw-shadow-color: #FFEFEB;
-  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .transition {
@@ -1418,14 +1394,14 @@ input:focus + .slider {
   border-width: 1px;
 }
 
-.dark .dark\:border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .dark .dark\:border-secondary {
   --tw-border-opacity: 1;
   border-color: rgb(41 54 81 / var(--tw-border-opacity));
+}
+
+.dark .dark\:border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .dark .dark\:bg-secondary {
@@ -1436,6 +1412,11 @@ input:focus + .slider {
 .dark .dark\:bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-secondary_dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 35 66 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-\[url\(\'\.\.\/public\/images\/global-vector-dark\.jpg\'\)\] {
@@ -1452,18 +1433,9 @@ input:focus + .slider {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.dark .dark\:shadow-primary {
-  --tw-shadow-color: #FE8464;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .dark .dark\:shadow-secondary {
   --tw-shadow-color: #293651;
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-.dark .dark\:hover\:border:hover {
-  border-width: 1px;
 }
 
 .dark .dark\:hover\:border-primary:hover {
